@@ -52,10 +52,10 @@
            
       <table class="table-auto relative w-full border border-separate text-break text-sm" v-if="filteredData.length">
         <thead class="bg-blue-500 text-white">
-          <tr>
+          <tr> 
             <th class="p-3" v-for="key in columns"
               @click="sortBy(key)"
-              :class="{ active: sortKey == key }">
+              :class="{ active: sortKey  == key }">
               {{ capitalize(key) }}
               <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
               </span>
